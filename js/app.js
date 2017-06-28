@@ -19,9 +19,9 @@ function agregarEstudiante() {
     hse= prompt("Ingrese habilidades socioemocionales de estudiante:",'');
     nombre=nombre.toLowerCase();
     //insertando en un array
-    arr.push(nombre);
-    arr.push(puntostecnicos);
-    arr.push(hse);
+    array.push(nombre);
+    array.push(puntostecnicos);
+    array.push(hse);
 
           var texto={};
 
@@ -91,7 +91,7 @@ function agregarEstudiante() {
      nombre=nombre.toLowerCase();
      var res="";
 
-     for(var i=0; i<=estudiantes.length; i++)
+     for(var i=0; i<estudiantes.length; i++)
       {
            if( nombre == estudiantes[i].nombre1)
            {
@@ -161,3 +161,4 @@ function topHSE(estudiantes) {
      console.log(res);
     return res;
  }
+
